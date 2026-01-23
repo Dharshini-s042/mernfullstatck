@@ -15,7 +15,7 @@ exports.createTask = async (req, res) => {
             message: 'Task created successfully'
         });
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        res.status(500).json({ error: error.message });git
     }
 };
 
