@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en"> </html>
+<body>
+    <h1>Rock Paper Scissor</h1>
+    <h3>Choose your choice :</h3>
+    <div class="choices">
+        <button onclick="play">Rock🪨</button>
+        <button >Paper📃</button>
+        <button >Scissor✂️</button>+
+
+        
+    </div>
+    <script>
+        function play(userChoice){
+            const computerChoice = Math.floor(Math.random()*3);
+            if(userChoice === computerChoice){
+                alert("It's a tie!");
+            } else if((userChoice === 0 && computerChoice === 2) || 
+                      (userChoice === 1 && computerChoice === 0) || 
+                      (userChoice === 2 && computerChoice === 1)){
+                alert("You win!");
+            } else {
+                alert("Computer wins!");
+            }
+        }
+    </script>
+</body>

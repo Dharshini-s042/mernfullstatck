@@ -15,7 +15,7 @@ exports.createTask = async (req, res) => {
             message: 'Task created successfully'
         });
     } catch (error) {
-        res.status(500).json({ error: error.message });git
+        res.status(500).json({ error: error.message });
     }
 };
 
@@ -78,5 +78,5 @@ exports.deleteTask = async (req, res) => {
     }
     catch (error) {
         res.json(error);
-    }       
+    }
 }

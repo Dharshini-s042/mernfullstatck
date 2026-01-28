@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: rgb(53, 153, 119);
+    color: rgb(185, 35, 35);
+}
+.navbar li{
+    list-style: none;
+}
+.navbar li.hover{
+    background-color: rgb(255, 255, 255);
+    color: white;
+}
